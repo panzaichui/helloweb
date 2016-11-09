@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript">
+	/**
+	   *你好吗
+	 */
+	var x = -1;
+	var arr=[1,2,'3'];
+	if (x > 0) {
+		//alert(1);
+	} else {
+		//alert(arr[2]);
+	}
+	//对象
+	var persion={
+	    age:20,
+	    name:'张三'
+	}
+	//alert(persion.age);
+	var name='Hello';
+	//alert(name+name.length);
+	//alert(name[2]);
+	//alert(name.toUpperCase()); //字符串变为大写
+	//alert(name.toLowerCase());
+	//alert(name.indexOf('llo'));  //返回字符串所在的位置
+	//alert(name.substring(2, 3));
+	
+	//数组
+	var arr=[1,2,3];
+	arr.length=5;
+	//alert(arr[2]);
+	//对象
+	persion.baba='小红';
+	//alert(persion.baba);
+	
+	//for循环
+	var num=0;
+	for(var i=0;i<=100;i++){
+	    num=i+num;
+	}
+	//alert(num);
+	//map的使用    key只能对应一个value
+	var map=new Map();
+	map.set('1','小名');
+	//alert(map.get('1'));
+	
+	//Set的使用
+	var set=new Set();
+	set.add('潘在垂的美人');
+	//alert(set);
+	//遍历set
+	for(var x of set){
+	  //alert(x);
+	}
+	
+	//定义函数
+	function abs(x) {
+    if (x >= 0) {
+        alert(x);
+    } else {
+        return -x;
+    }
+}
+
+	//abs('10089');
+	
+	//对象绑定方法
+	var panpan={
+	   name:'潘在垂',
+	   age:function(){
+	      //alert('这是潘在垂的js');
+	   }
+	};
+	//panpan.age();
+	//内置对象date
+   var now=new Date();
+   alert(now.getMonth());
+	var today = new Date();
+   if (today.getMonth() === 10 ) {
+    alert('亲爱的，我预定了晚餐，晚上6点在餐厅见！');
+}
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

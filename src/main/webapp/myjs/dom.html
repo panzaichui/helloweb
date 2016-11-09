@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>dom.html</title>
+<meta charset="utf-8" />
+<meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="this is my page">
+<meta charset="utf-8" />
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<script type="text/javascript">
+	//通过ID获取html对象
+	// var getByid=document.getElementById('testID');
+	//getByid.innerHTML='你好';
+
+	// 先定位ID为'test-table'的节点，再返回其内部所有tr节点：
+	// var trs=document.getElementById('tableID').getElementByName('tr');
+	function change() {
+		//var getByid = document.getElementById('testID');
+		//getByid.innerHTML = '你好';
+		//getByid.innerText='你好吗';
+		var div = document.getElementById('list');
+		var p = document.getElementById('js');
+		div.appendChild(p);
+	}
+	function add() {
+		//var getByid = document.getElementById('testID');
+		//getByid.innerHTML = '你好';
+		//getByid.innerText='你好吗';
+		var div = document.getElementById('list');
+		var p=document.createElement('p');
+		p.id='test';
+		p.innerHTML='我是新增的';
+		div.appendChild(p);
+	}
+</script>
+</head>
+
+<body>
+	<p id="js">JavaScript</p>
+	<div id="list">
+		<p id="java">Java</p>
+		<p id="python">Python</p>
+		<p id="scheme">Scheme</p>
+	</div>
+	<button onclick="change()">点击好添加</button>
+	<button onclick="add()">点击好添加</button>
+</body>
+</html>

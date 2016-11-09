@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 2.6//EN"
+
+        "http://tuckey.org/res/dtds/urlrewrite2.6.dtd">
+<!-- url地址的重写 -->
+<!-- 显示主题帖 -->
+<urlrewrite>
+<rule>
+   <from>^/forum/thread/([0-9]+).html$ </from>
+   <to type="forward">/forum/list.action?id=$1</to>
+</rule>
+<rule>
+   <from>^/forum/thread/([0-9]+).html?page=([0-9]+)$</from>
+   <to type="forward">/forum/list.action?id=$1.page=$2</to>
+</rule>
+</urlrewrite>
+
